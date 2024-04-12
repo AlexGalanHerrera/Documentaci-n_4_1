@@ -14,15 +14,6 @@ public class Empleado {
 	private Departamento dept;
 
 	/**
-	 * Establece la población del empleado.
-	 * @param pobla la población del empleado.
-	 * @serial La población del empleado.
-	 */
-	public void setPobla(String pobla) {
-		this.pobla = pobla;
-	}
-
-	/**
 	 * Obtiene el oficio del empleado.
 	 * @return el oficio del empleado.
 	 * @serialData El oficio del empleado.
@@ -102,5 +93,17 @@ public class Empleado {
 		}
 		return true;
 	}
+	/**
+	 * Establece la población del empleado.
+	 * @param pobla la población del empleado.
+	 * @throws IllegalArgumentException si la población proporcionada es nula.
+	 */
+	public void setPobla(String pobla) throws IllegalArgumentException {
+		if (pobla == null) {
+			throw new IllegalArgumentException("La población no puede ser nula.");
+		}
+		this.pobla = pobla;
+	}
+
 }
 
