@@ -6,6 +6,9 @@
  * @deprecated Esta clase puede ser eliminada en futuras versiones.
  * @see Departamento
  */
+
+/** Hola soy alex */
+
 public class Empleado {
 
 	private String pobla;
