@@ -1,7 +1,10 @@
 /**
  * Esta clase representa a un empleado.
- * @author Alejandro galán herrera
+ * @author Alejandro Galán Herrera
  * @version 1.0
+ * @since 12/04/2024
+ * @deprecated Esta clase puede ser eliminada en futuras versiones.
+ * @see Departamento
  */
 public class Empleado {
 
@@ -13,6 +16,7 @@ public class Empleado {
 	/**
 	 * Establece la población del empleado.
 	 * @param pobla la población del empleado.
+	 * @serial La población del empleado.
 	 */
 	public void setPobla(String pobla) {
 		this.pobla = pobla;
@@ -21,6 +25,7 @@ public class Empleado {
 	/**
 	 * Obtiene el oficio del empleado.
 	 * @return el oficio del empleado.
+	 * @serialData El oficio del empleado.
 	 */
 	public String getOficio() {
 		return oficio;
@@ -37,6 +42,7 @@ public class Empleado {
 	/**
 	 * Obtiene el salario del empleado.
 	 * @return el salario del empleado.
+	 * @deprecated Este método será eliminado en futuras versiones.
 	 */
 	public Double getSalario() {
 		return salario;
@@ -53,6 +59,7 @@ public class Empleado {
 	/**
 	 * Obtiene el departamento del empleado.
 	 * @return el departamento del empleado.
+	 * @see Departamento
 	 */
 	public Departamento getDept() {
 		return dept;
@@ -61,6 +68,7 @@ public class Empleado {
 	/**
 	 * Establece el departamento del empleado.
 	 * @param dept el departamento del empleado.
+	 * @serialData El departamento del empleado.
 	 */
 	public void setDept(Departamento dept) {
 		this.dept = dept;
@@ -69,9 +77,18 @@ public class Empleado {
 	/**
 	 * Aumenta el salario del empleado en una cantidad determinada.
 	 * @param subida la cantidad en la que se aumenta el salario.
+	 * @deprecated Este método será eliminado en futuras versiones.
 	 */
 	public void subidasalario(Double subida) {
 		salario = salario + subida;
+	}
+
+	/**
+	 * Aumenta el salario del empleado en una cantidad determinada.
+	 * @param subida la cantidad en la que se aumenta el salario.
+	 */
+	public void subirSalario(Double subida) {
+		salario += subida;
 	}
 
 	/**
@@ -86,3 +103,4 @@ public class Empleado {
 		return true;
 	}
 }
+
