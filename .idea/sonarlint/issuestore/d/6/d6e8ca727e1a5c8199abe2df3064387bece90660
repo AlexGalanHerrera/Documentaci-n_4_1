@@ -1,0 +1,19 @@
+
+a
+java:S2259^"DA "NullPointerException" could be thrown; "nombre" is nullable here.(Ç’Õ8±ı”í1
+q
+java:S1450"TRemove the "pobla" field and declare it as a local variable in the relevant methods.(‰“ÄÁ8½ß •í1
+R
+java:S1133)"5Do not forget to remove this deprecated code someday.(ÕáƒÆ8î‡ú”í1
+D
+java:S1123)"'Add the missing @Deprecated annotation.(ÕáƒÆ8ÜƒÎ•í1
+R
+java:S1133L"5Do not forget to remove this deprecated code someday.(…©×´8ğ‡ú”í1
+D
+java:S1123L"'Add the missing @Deprecated annotation.(…©×´8ŞƒÎ•í1
+^
+java:S1126^"AReplace this if-then-else statement by a single return statement.(Ç’Õ8ò‡ú”í1
+F
+java:S1068")Remove this unused "pobla" private field.(‰“ÄÁ8ô‡ú”í1
+P
+java:S1144\".Remove this unused private "comprobar" method.(Àø±†şÿÿÿÿ8ô‡ú”í1
